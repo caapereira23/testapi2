@@ -7,7 +7,7 @@ exports.getMxList = (req, res) => {
         console.log('MX ->');
         if(err)
         res.send(err);
-        console.log('MX -> ', Mx);
-        res.send(Mx);
+        console.log('MX -> ', mx);
+        res.send(mx);
     })
 } 

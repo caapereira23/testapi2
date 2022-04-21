@@ -8,11 +8,6 @@ app.get('/agenda', (req, res) => {
     })
 });
 
-app.use('/', (req, res)=>{
-    res.send('Hello World!')
-    console.log('Hello World!');
-})
-
 // import routes
 const MxRoutes = require('./src/routes/mx.route');
 
