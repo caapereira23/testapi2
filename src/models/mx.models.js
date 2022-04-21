@@ -60,12 +60,12 @@ Mx.getAllMx = () =>{
         var request = new sql.Request();
         // db query
         
-        request.query('select * from MX', function(err, mx){
+        request.query("SELECT * FROM MX WHERE username='Carlos Alberto'", function(err, mx){
             if(err){
                 console.log(err);
             }else{
                 console.log(mx);
-                res.send(mx);
+                mx.send(mx);
             }
         });
     

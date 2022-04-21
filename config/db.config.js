@@ -20,16 +20,16 @@ sql.connect(dbConn, function(err) {
     }
     // create the request obj
 
-    var request = new sql.Request();
-    // db query
+    // var request = new sql.Request();
+    // // db query
     
-    request.query('select * from MX', function(err, recordSet){
-        if(err){
-            console.log(err);
-        }else{
-            console.log(recordSet);
-        }
-    });
+    // request.query('select * from MX', function(err, recordSet){
+    //     if(err){
+    //         console.log(err);
+    //     }else{
+    //         console.log(recordSet);
+    //     }
+    // });
 
     // request.query("select * from MX where username='Carlos Alberto'", function(err, recordSet){
     //     if(err){
