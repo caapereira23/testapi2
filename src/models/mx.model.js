@@ -63,7 +63,7 @@ Mx.getAllMx = (result) => {
         var request = new sql.Request();
 
         // db query
-        request.query("SELECT * FROM MX WHERE username='Carlos Alberto'", function (err, res) {
+        request.query("SELECT username, texto FROM MX WHERE username='Carlos Alberto'", function (err, res) {
             if (err) {
                 console.log(err);
                 result(null, err);
